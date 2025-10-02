@@ -1,0 +1,11 @@
+.header { /* header comun para todas las paginas */
+  padding: 50px;
+  text-align: center;
+  background: #DEBBB4;
+  color: grey;
+  padding-top: 5px;
+  padding-bottom: 100px; /* estos padding crean el espacio debajo del título en h1 */
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Verdana;
+}
