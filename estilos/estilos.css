@@ -1,16 +1,25 @@
-.header { /* header comun para todas las paginas */
+.header { /* header y footer comun para todas las paginas */
   padding: 50px;
   text-align: center;
-  background: #DEBBB4;
-  color: grey;
+  background: #f2b47b;
+  color: black;
   padding-top: 40px;
   padding-bottom: 40px; /* estos padding crean el espacio debajo del título en h1 */
   padding-left: 40px;
   padding-right: 20px;
   font-family: Verdana;
-  background-image: url("imagenes/header-bck.jpg");
-  background-size: cover;
-  background-position: center;
+}
+
+.footer {
+  padding: 30px;
+  text-align: center;
+  background: #f2b47b;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Verdana;
 }
 
 .webphrase {
@@ -24,4 +33,35 @@
   padding: 20px;
   font-family: Verdana;
   font-size: 20px;
+}
+
+.navmenu a {
+  display: inline-block;
+  background-color: #b8b1d8;
+  padding: 10px, 20px; /* espacio alrededor del texto */
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 200px;
+  color: #726863;
+  box-shadow: 0 0 0 3px #BDAD95;
+
+  /* modifica el botón en sí */
+  min-width: 200px;
+  min-height: 20px;
+  line-height: 50px;
+}
+
+.navmenu a:hover {
+  transform: scale(1.05);
+  color: #E8DFD1;
+}
+
+.content {
+  background-color: #e3ead2;
+  overflow: hidden; /* ensancha el contenido para que ocupe todo el espacio sin tocar otros márgenes/padding */
+}
+
+.footer {
+  text-align: center;
+  font-family: Verdana;
 }
