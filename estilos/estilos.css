@@ -8,6 +8,9 @@
   padding-left: 40px;
   padding-right: 20px;
   font-family: Verdana;
+  background-image: url("imagenes/header-bck.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .webphrase {
