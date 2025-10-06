@@ -67,7 +67,7 @@
   list-style-position: inside;
   text-align: left;
   display: inline-block;
-  width: 700px;        /* ajusta el ancho que ocupan las listas */
+  width: 700px; /* ajusta el ancho que ocupan las listas */
   margin: 20px auto;
   padding-left: 20px;
 }
@@ -75,6 +75,38 @@
 .content img { /* css para que todas las imagenes aparezcan igual */
   display: block;
   margin: 30px auto; /* margen superior e inferior, y centrado horizontal */
-  max-width: 100%;   /* hace que la imagen no se desborde en pantallas pequeñas */
-  height: auto;      /* mantiene proporciones */
+  max-width: 100%; /* hace que la imagen no se desborde en pantallas pequeñas */
+  height: auto; /* mantiene proporciones */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  gap: 40px; /* Espacio entre imágenes */
+  width: 50%; /* ocupa todo el ancho del contenedor */
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%; /* ocupa todo el ancho del contenedor */
+  height: auto;
+  border-radius: 8px; /*redondea las imagenes */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.table { /* css para el contenido comun a todas las paginas */
+  background-color: #BBFCCD;
+  display: inline-block;
+  font-family: Verdana;
+  text-align: center;
+}
+
+.form {
+  background-color: #F0E3C0;
+  border: 2px solid black; /* hace borde al elemento */
+  max-width: 200px;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%; /* ocupa todo el ancho del contenedor */
+  margin: 30px auto; /* centra en el medio el formulario */
 }
