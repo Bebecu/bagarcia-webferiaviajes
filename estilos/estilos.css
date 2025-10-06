@@ -63,7 +63,7 @@
   text-align: center;
 }
 
-.content ul { /* css para las listas desordenadas */
+.content ul, ol { /* css para las listas */
   list-style-position: inside;
   text-align: left;
   display: inline-block;
