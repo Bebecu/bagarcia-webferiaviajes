@@ -1,4 +1,4 @@
-.header { /* header y footer comun para todas las paginas */
+.header { /* header comun para todas las paginas */
   padding: 50px;
   text-align: center;
   background: #f2b47b;
@@ -10,7 +10,7 @@
   font-family: Verdana;
 }
 
-.footer {
+.footer { /* footer comun de  la web */
   padding: 30px;
   text-align: center;
   background: #f2b47b;
@@ -22,12 +22,12 @@
   font-family: Verdana;
 }
 
-.webphrase {
+.webphrase { /*frase de la web */
   text-align: center;
   font-family: Verdana;
 }
 
-.navmenu {
+.navmenu { /* menu en sí */
   background-color: #FFC585;
   text-align: center;
   padding: 20px;
@@ -35,7 +35,7 @@
   font-size: 20px;
 }
 
-.navmenu a {
+.navmenu a { /* texto del menu */
   display: inline-block;
   background-color: #b8b1d8;
   padding: 10px, 20px; /* espacio alrededor del texto */
@@ -51,17 +51,30 @@
   line-height: 50px;
 }
 
-.navmenu a:hover {
+.navmenu a:hover { /* lo que pasa al hacer hover encima del menu */
   transform: scale(1.05);
   color: #E8DFD1;
 }
 
-.content {
+.content { /* css para el contenido comun a todas las paginas */
   background-color: #e3ead2;
   overflow: hidden; /* ensancha el contenido para que ocupe todo el espacio sin tocar otros márgenes/padding */
+  font-family: Verdana;
+  text-align: center;
 }
 
-.footer {
-  text-align: center;
-  font-family: Verdana;
+.content ul { /* css para las listas desordenadas */
+  list-style-position: inside;
+  text-align: left;
+  display: inline-block;
+  width: 700px;        /* ajusta el ancho que ocupan las listas */
+  margin: 20px auto;
+  padding-left: 20px;
+}
+
+.content img { /* css para que todas las imagenes aparezcan igual */
+  display: block;
+  margin: 30px auto; /* margen superior e inferior, y centrado horizontal */
+  max-width: 100%;   /* hace que la imagen no se desborde en pantallas pequeñas */
+  height: auto;      /* mantiene proporciones */
 }
