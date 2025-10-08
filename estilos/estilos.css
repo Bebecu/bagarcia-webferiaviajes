@@ -87,15 +87,15 @@
   height: auto; /* mantiene proporciones */
 }
 
-.gallery {
+.gallery { /* preparando un css especial para la sección top_destinos */
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
   gap: 40px; /* Espacio entre imágenes */
-  width: 50%; /* ocupa todo el ancho del contenedor */
+  width: 95%; /* ocupa todo el ancho del contenedor */
   margin: 0 auto;
 }
 
-.gallery img {
+.gallery img { /* estilo de las imágenes en sí */
   width: 100%; /* ocupa todo el ancho del contenedor */
   height: auto;
   border-radius: 8px; /*redondea las imagenes */
@@ -109,7 +109,7 @@
   text-align: center;
 }
 
-.form {
+.form { /* estilo del formulario de contacto */
   background-color: #F0E3C0;
   border: 2px solid black; /* hace borde al elemento */
   max-width: 200px;
@@ -117,4 +117,7 @@
   border-radius: 8px;
   width: 100%; /* ocupa todo el ancho del contenedor */
   margin: 30px auto; /* centra en el medio el formulario */
+  display: flex; /* activa flexbox */
+  flex-direction: column; /* organiza los hijos en columna */
+  gap: 10px; /* espacio entre los elementos internos */
 }
