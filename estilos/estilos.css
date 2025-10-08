@@ -58,9 +58,17 @@
 
 .content { /* css para el contenido comun a todas las paginas */
   background-color: #e3ead2;
+/*   width: 1000px; /* ajusta el ancho que ocupan los textos */
+  margin: 0 auto; /* centrado horizontal */
   overflow: hidden; /* ensancha el contenido para que ocupe todo el espacio sin tocar otros márgenes/padding */
   font-family: Verdana;
   text-align: center;
+}
+
+.content .inner { /* creo nuevo css para el contenido de dentro del content */
+  max-width: 1000px;  /* limita el ancho del texto */
+  margin: 0 auto;     /* centra el texto */
+  padding: 20px;      /* opcional: espacio interno */
 }
 
 .content ul, ol { /* css para las listas */
