@@ -1,120 +1,82 @@
-.header { /* header comun para todas las paginas */
-  padding: 50px;
-  text-align: center;
-  background: #f2b47b;
-  color: black;
-  padding-top: 40px;
-  padding-bottom: 40px; /* estos padding crean el espacio debajo del título en h1 */
-  padding-left: 40px;
-  padding-right: 20px;
-  font-family: Verdana;
-}
+<!DOCTYPE html> <!-- establezco la cabecera de la página -->
+<html lang="es">
+<head>
+  <link rel="stylesheet"href="estilos/estilos.css" />
+  <title>WEbFERiaVIajes - Top Destinos</title>
+  <meta charset="UTF-8">
+</head>
 
-.footer { /* footer comun de  la web */
-  padding: 30px;
-  text-align: center;
-  background: #f2b47b;
-  color: black;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: Verdana;
-}
+<body> <!-- contenido del header de la página -->
+  <header class="header">
+    <h1>WEFERVI - Tu web de confianza para viajar</h1>
+    <p class="webphrase">Una web en la que todo gira alrededor de los viajes. ¿Viajamos juntos?</p>
+  </header>
 
-.webphrase { /*frase de la web */
-  text-align: center;
-  font-family: Verdana;
-}
+  <div class="navmenu"><a href="index.html">Inicio</a>
+    <a href="vuelos.html">Vuelos</a>
+    <a href="alojamiento.html">Alojamiento</a>
+    <a href="top_destinos.html">Top Destinos</a>
+    <a href="contacto.html">Contacto</a>
+  </div>
 
-.navmenu { /* menu en sí */
-  background-color: #FFC585;
-  text-align: center;
-  padding: 20px;
-  font-family: Verdana;
-  font-size: 20px;
-}
+  <main class="content">
+    <div class="inner">
+      <p>
 
-.navmenu a { /* texto del menu */
-  display: inline-block;
-  background-color: #b8b1d8;
-  padding: 10px, 20px; /* espacio alrededor del texto */
-  margin: 10px;
-  text-decoration: none;
-  border-radius: 200px;
-  color: #726863;
-  box-shadow: 0 0 0 3px #BDAD95;
+        En esta sección, os mostramos los destinos <b>más buscados</b> y <b>sus motivos</b>.
 
-  /* modifica el botón en sí */
-  min-width: 200px;
-  min-height: 20px;
-  line-height: 50px;
-}
+        <table class="table" border="2"> <!-- esto es una tabla con 3 columnas y 5 filas para destacar destinos -->
+          <thead>
+            <th>Destino</th>
+            <th>Motivos</th>
+            <th>Precio Aproximado (10 días)</th>
+          </thead>
+          <tbody>
+            <tr><td>Francia</td><td>Cultura y gastronomía</td><td>2.000€</td></tr>
+            <tr><td>España</td><td>Playa y vida nocturna</td><td>1.500€</td></tr>
+            <tr><td>Japón</td><td>Tecnología y tradición</td><td>4.500€</td></tr>
+            <tr><td>Italia</td><td>Historia y arte</td><td>1.700€</td></tr>
+            <tr><td>Tailandia</td><td>Aventura y naturaleza</td><td>1.200€</td></tr>
+            <tr><td>Maldivas</td><td>Playa y relax</td><td>3.200€</td></tr>
+        </table><br>
 
-.navmenu a:hover { /* lo que pasa al hacer hover encima del menu */
-  transform: scale(1.05);
-  color: #E8DFD1;
-}
+        <br>A continuación, unas <b>fotos</b> con los aspectos más destacados de cada país.
 
-.content { /* css para el contenido comun a todas las paginas */
-  background-color: #e3ead2;
-/*   width: 1000px; /* ajusta el ancho que ocupan los textos */
-  margin: 0 auto; /* centrado horizontal */
-  overflow: hidden; /* ensancha el contenido para que ocupe todo el espacio sin tocar otros márgenes/padding */
-  font-family: Verdana;
-  text-align: center;
-}
+        <section class="gallery"> <!-- he creado una galería para cudrar y presentar de forma ordenada las imágenes -->
+          <img src="imagenes/france.jpg" alt="Comida francesa">
+          <img src="imagenes/spain.jpg" alt="Sagrada Familia">
+          <img src="imagenes/japon.jpg" alt="Cultura japonesa">
+          <img src="imagenes/italia.jpg" alt="Comida italiana">
+          <img src="imagenes/tailandia.jpg" alt="Estatua tailandesa">
+          <img src="imagenes/maldivas.jpg" alt="Playa de Maldivas">
+        </section>
 
-.content .inner { /* creo nuevo css para el contenido de dentro del content */
-  max-width: 1000px;  /* limita el ancho del texto */
-  margin: 0 auto;     /* centra el texto */
-  padding: 20px;      /* opcional: espacio interno */
-}
+        <h3>💡 Alternativas </h3>
 
-.content ul, ol { /* css para las listas */
-  list-style-position: inside;
-  text-align: left;
-  display: inline-block;
-  width: 700px; /* ajusta el ancho que ocupan las listas */
-  margin: 20px auto;
-  padding-left: 20px;
-}
+        Si nos preguntáis, vamos a adjuntar una lista de <b>destinos no tan conocidos</b> que merecen mucho la pena:<br>
+        <ol>
+          <li>Mostar, Bosnia y Herzegovina.</li>
+          <li>Svaneti, Georgia (región del Cáucaso).</li>
+          <li>Isla de Holbox, México.</li>
+          <li>Valle de Cocora, Colombia.</li>
+          <li>Rovaniemi (fuera de temporada), Laponia, Finlandia.</li>
+        </ol>
 
-.content img { /* css para que todas las imagenes aparezcan igual */
-  display: block;
-  margin: 30px auto; /* margen superior e inferior, y centrado horizontal */
-  max-width: 100%; /* hace que la imagen no se desborde en pantallas pequeñas */
-  height: auto; /* mantiene proporciones */
-}
+        <h3>🛎️ Destino sorpresa </h3>
 
-.gallery { /* preparando un css especial para la sección top_destinos */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 40px; /* Espacio entre imágenes */
-  width: 95%; /* ocupa todo el ancho del contenedor */
-  margin: 0 auto;
-}
+        Para los que tengan más ganas de aventura, os dejamos un enlace a nuestra web favorita. En ella, podréis pedir <b>destinos sorpresa</b> si no tenéis ganas de pensar dónde ir... ¿Os atravéis?<br>
 
-.gallery img {
-  width: 100%; /* ocupa todo el ancho del contenedor */
-  height: auto;
-  border-radius: 8px; /*redondea las imagenes */
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+        <br><a href="https://www.vacationroulette.com/" target="_blank">[!] Ruleta randomizadora de vacaciones [!]</a>
 
-.table { /* css para el contenido comun a todas las paginas */
-  background-color: #BBFCCD;
-  display: inline-block;
-  font-family: Verdana;
-  text-align: center;
-}
 
-.form {
-  background-color: #F0E3C0;
-  border: 2px solid black; /* hace borde al elemento */
-  max-width: 200px;
-  padding: 30px;
-  border-radius: 8px;
-  width: 100%; /* ocupa todo el ancho del contenedor */
-  margin: 30px auto; /* centra en el medio el formulario */
-}
+      </p>
+    </div>
+  </main>
+
+  <footer class="footer"> <!--pie de la página -->
+    <p>™ Todos los derechos reservados.</p>
+    <i>Todas las imágenes han sido descargadas de <a href="https://pixabay.com/" target="_blank">Pixabay</a> y son de uso libre.</i>
+  </footer>
+
+</body>
+</html>
